@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      font-size: 14px;
+      font-family: "Google Sans",Roboto,Arial,sans-serif;
+      background: #fff;
+    }
+    .containner{
+      width: 1220px;
+      margin: 0 auto;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+    .company{
+      padding: 20px 0 40px;
+      display: flex;
+    }
+    .company .icon{
+      width: 92px;
+      height: 92px;
+      border-radius: 50%;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .app-download .icon img,
+    .company .icon img{
+      width:100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .company-name{
+      position: relative;
+      padding-left: 110px;
+      min-height: 92px;
+      font-size: 50px;
+      line-height: 92px;
+    }
+    .company-name,
+    .company-name-en{
+      width: 50%;
+      box-sizing: border-box;
+    }
+    .company-name-en{
+      font-size: 20px;
+      line-height: 1.4;
+      padding-top: 24px;
+    }
+    .app-wrapper{
+      display: flex;
+    }
+    .app-wrapper .part-a,
+    .app-wrapper .part-b
+    {
+      width: 50%;
+      padding-bottom: 30px;
+    }
+    .app-info{}
+    .app-info .title{
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 1.6;
+      color: #202124;
+    }
+    .app-company{
+      color: #5f6368;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .app-adtag{
+      font-size: 14px;
+      font-weight: 200;
+      color: #5f6368;
+    }
+    .app-desc{
+      margin-top: 20px; 
+      margin-bottom: 20px; 
+      font-size: 16px;
+    }
+    .app-download{}
+    .app-download .c{
+      display: flex;
+    }
+    .app-download .icon{
+      width: 52px;
+      height: 52px;
+      margin-right: 20px;
+    }
+    .app-download .properties{
+      display: flex;
+      /* width: 320px; */
+    }
+    .property-item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 7px 24px;
+      position: relative;
+    }
+     .property-item:first-child::after{
+      display: none;
+     }
+     .property-item::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 1px;
+      height: 24px;
+      background-color: #e8eaed;
+      transform: translateY(-50%)
+     }
+     .property-item .b{
+      color:#5f6368;
+      font-size: 12px;
+     }
+    .age-icon{
+      width: auto;
+      height: 16px;
+    }
+    .app-download .f{
+      margin: 20px 0;
+    }
+    .btn{
+      background-color: #01875f;
+      color: #fff;
+      padding: 0 16px;
+      font-size: 14px;
+      line-height: 40px;
+      display: inline-block;
+      min-width: 150px;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background .3s;
+    }
+    .btn:hover{
+      background-color: #056449;
+    }
+    .swiper{
+      height: 355px;
+    }
+    .swiper .swiper-slide{
+      width: 200px;
+    }
+    .swiper .swiper-slide img{
+      width: 100%;
+
+    }
+    .swiper-button{
+      width: 56px;
+      height: 56px;
+      background-color: #fff;
+      border-radius: 50%;
+      box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    }
+    .swiper-button::after{
+      font-size: 16px;
+      color: #555;
+    }
+    .swiper-button-disabled{
+      display: none;
+    }
+    /* .swiper-button-prev{
+      left: -20px;
+    } */
+  </style>
+</head>
+<body>
+  <div class="containner">
+    <section class="company">
+      <h1 class="company-name">
+        <div class="icon">
+          <img src="./images/app_icon.png" alt="">
+        </div>
+        HK Meetfun
+      </h1>
+      <div class="company-name-en">
+        <div>COMPANY</div>
+        <div>HONG KONG LITTER BEAR INFORMATION TECHNOLOGY CO.,LIMITED</div>
+      </div>
+    </section>
+    <section class="app-wrapper">
+      <div class="part-a">
+        <div class="app-info">
+          <h2 class="title">Ultra Cleaner</h2>
+          <div class="app-company">香港小熊信息技术有限公司</div>
+          <div class="app-adtag">包含广告</div>
+        </div>
+        <div class="app-desc">Ultra Cleaner 是适用于 Android 的专业清洁和增强程序。</div>
+        <div class="app-download">
+          <div class="c">
+            <div class="icon">
+              <img src="./images/app_icon.png" alt="">
+            </div>
+            <div class="properties">
+              <div class="property-item">
+                <div class="a">4.4 ★</div>
+                <div class="b">740条评论</div>
+              </div>
+              <div class="property-item">
+                <div class="a">50万+</div>
+                <div class="b">下载次数</div>
+              </div>
+              <div class="property-item">
+                <div class="a">
+                  <img src="./images/age.webp" alt="" class="age-icon">
+                </div>
+                <div class="b">
+                  3岁以上
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="f">
+            <a href="###" target="_blank" class="btn">安装</a>
+          </div>
+        </div>
+      </div>
+      <div class="part-b">
+        <div class="swiper">
+           <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/preview/1.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/preview/2.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/preview/3.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/preview/4.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/preview/5.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/preview/6.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/preview/7.png" alt="">
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button swiper-button-prev"></div>
+          <div class="swiper-button swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script>
+      var swiper = new Swiper(".swiper", {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        // autoplay: true,
+        // delay: 5000,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+    },
+      });
+  </script>
+</body>
+</html>
