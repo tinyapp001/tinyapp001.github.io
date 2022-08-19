@@ -6,200 +6,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title></title>
   <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
   <style>
-    *{
-      margin: 0;
-      padding: 0;
-    }
-    body{
-      font-size: 14px;
-      font-family: "Google Sans",Roboto,Arial,sans-serif;
-      background: #fff;
-    }
-    .containner{
-      width: 1220px;
-      margin: 0 auto;
-      padding: 0 10px;
-      box-sizing: border-box;
-    }
-    .company{
-      padding: 20px 0 40px;
-      display: flex;
-    }
-    .company .icon{
-      width: 92px;
-      height: 92px;
-      border-radius: 50%;
-      overflow: hidden;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-    .app-download .icon img,
-    .company .icon img{
-      width:100%;
-      height: 100%;
-      object-fit: contain;
-    }
-    .company-name{
-      position: relative;
-      padding-left: 110px;
-      min-height: 92px;
-      font-size: 50px;
-      line-height: 92px;
-    }
-    .company-name,
-    .company-name-en{
-      width: 50%;
-      box-sizing: border-box;
-    }
-    .company-name-en{
-      font-size: 20px;
-      line-height: 1.4;
-      padding-top: 24px;
-    }
-    .app-wrapper{
-      display: flex;
-    }
-    .app-wrapper .part-a,
-    .app-wrapper .part-b
-    {
-      width: 50%;
-      padding-bottom: 30px;
-    }
-    .app-info{}
-    .app-info .title{
-      font-size: 28px;
-      font-weight: 400;
-      line-height: 1.6;
-      color: #202124;
-    }
-    .app-company{
-      color: #5f6368;
-      font-size: 16px;
-      font-weight: 500;
-    }
-    .app-adtag{
-      font-size: 14px;
-      font-weight: 200;
-      color: #5f6368;
-    }
-    .app-desc{
-      margin-top: 20px; 
-      margin-bottom: 20px; 
-      font-size: 16px;
-    }
-    .app-download{}
-    .app-download .c{
-      display: flex;
-    }
-    .app-download .icon{
-      width: 52px;
-      height: 52px;
-      margin-right: 20px;
-    }
-    .app-download .properties{
-      display: flex;
-      /* width: 320px; */
-    }
-    .property-item{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 7px 24px;
-      position: relative;
-    }
-     .property-item:first-child::after{
-      display: none;
-     }
-     .property-item::after{
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 1px;
-      height: 24px;
-      background-color: #e8eaed;
-      transform: translateY(-50%)
-     }
-     .property-item .b{
-      color:#5f6368;
-      font-size: 12px;
-     }
-    .age-icon{
-      width: auto;
-      height: 16px;
-    }
-    .app-download .f{
-      margin: 20px 0;
-    }
-    .btn{
-      background-color: #01875f;
-      color: #fff;
-      padding: 0 16px;
-      font-size: 14px;
-      line-height: 40px;
-      display: inline-block;
-      min-width: 150px;
-      text-align: center;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: background .3s;
-    }
-    .btn:hover{
-      background-color: #056449;
-    }
-    .swiper{
-      height: 355px;
-    }
-    .swiper .swiper-slide{
-      width: 200px;
-    }
-    .swiper .swiper-slide img{
-      width: 100%;
-
-    }
-    .swiper-button{
-      width: 56px;
-      height: 56px;
-      background-color: #fff;
-      border-radius: 50%;
-      box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
-    }
-    .swiper-button::after{
-      font-size: 16px;
-      color: #555;
-    }
-    .swiper-button-disabled{
-      display: none;
-    }
+    
     /* .swiper-button-prev{
       left: -20px;
     } */
   </style>
 </head>
 <body>
+  <nav class="navbar main-nav fixed-top navbar-expand-lg">
+  <div class="container">
+      <span class="tf-ion-android-menu"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link scrollTo" href="#about">About</a>
+        </li>
+      </ul>
+      </div>
+  </div>
+</nav>
+  <img src="images/unnamed.png 2x" srcset="images/unnamed.png 2x" class="T75of QtbZV" aria-hidden="true" alt="图片" data-atf="false" data-iml="4892.799999952316" />
   <div class="containner">
-    <section class="company">
+    
+    <!-- <section class="company" id="home">
       <h1 class="company-name">
         <div class="icon">
           <img src="./images/app_icon.png" alt="">
         </div>
-        HK Meetfun
+        HK Meetfun Limited
+        HK Meetfun Limited
       </h1>
       <div class="company-name-en">
         <div>COMPANY</div>
-        <div>HONG KONG LITTER BEAR INFORMATION TECHNOLOGY CO.,LIMITED</div>
+        <div>HK Meetfun Limited</div>
       </div>
-    </section>
-    <section class="app-wrapper">
+    </section> -->
+
+    <div class="px-4 py-5 my-5 text-center">
+    <!-- <img class="d-block mx-auto mb-4" src="./images/app_icon.png" alt="" width="72" height="72"> -->
+    <h1 class="display-5 fw-bold" mb-8>HK Meetfun Limited</h1>
+    <div class="col-lg-15 mx-auto">
+      <p class="lead mb-4">HK Meetfun Limited is an Internet software company for the global market. We focus on the field of mobile Internet and concentrate on creating mobile software products that are widely loved by hundreds of millions of users. Our products can provide users with various functions and meet the various needs of users when using smart devices. The founding members of the company are from well-known Internet companies, and the team members have many years of experience in mobile software development and operation. We believes in a simple and reliable culture, realizes dreams with technology, and changes the world with products.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <!-- <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button> -->
+      </div>
+    </div>
+  </div>
+
+    <section class="app-wrapper" id="about">
       <div class="part-a">
         <div class="app-info">
-          <h2 class="title">Ultra Cleaner</h2>
-          <div class="app-company">香港小熊信息技术有限公司</div>
-          <div class="app-adtag">包含广告</div>
+          <h2 class="title">Quick Clean Pro</h2>
         </div>
-        <div class="app-desc">Ultra Cleaner 是适用于 Android 的专业清洁和增强程序。</div>
+        <div class="app-desc">Quick Clean Pro a smart cleaner app with simple operation and powerful features.。</div>
         <div class="app-download">
           <div class="c">
             <div class="icon">
@@ -207,7 +74,7 @@
             </div>
             <div class="properties">
               <div class="property-item">
-                <div class="a">4.4 ★</div>
+                <div class="a">4.3 ★</div>
                 <div class="b">740条评论</div>
               </div>
               <div class="property-item">
@@ -225,7 +92,7 @@
             </div>
           </div>
           <div class="f">
-            <a href="###" target="_blank" class="btn">安装</a>
+            <a href="https://play.google.com/store/apps/details?id=com.cleaner.boost.quick.junk.pro" target="_blank" class="btn">安装</a>
           </div>
         </div>
       </div>
@@ -261,7 +128,52 @@
       </div>
     </section>
   </div>
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mr-auto">
+        
+          <div class="copyright">
+            <p>@2022 One Cleaner All Rights Reserved
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 text-lg-right">
+          <!-- Social Icons -->
+          <!-- <ul class="social-icons list-inline">
+            <li class="list-inline-item">
+              <a href=""><i class="tf-ion-social-facebook"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href=""><i class="tf-ion-social-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href=""><i class="tf-ion-social-linkedin"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href=""><i class="tf-ion-social-instagram-outline"></i></a>
+            </li>
+          </ul> -->
+          <!-- Footer Links -->
+          <ul class="footer-links list-inline">
+            <!-- <li class="list-inline-item">
+              <a href="#">ABOUT</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">TEAM</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">CONTACT</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
   <script src="./js/swiper-bundle.min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
   <script>
       var swiper = new Swiper(".swiper", {
         slidesPerView: 'auto',
